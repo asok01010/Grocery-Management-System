@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Login </title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <style>
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+  }
+  body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EDB429;
+    padding: 30px;
+  }
+  .container{
+    position: relative;
+    max-width: 850px;
+    width: 30%;
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    perspective: 2700px;
+  }
+
+  .form-content .login-form,
+  .form-content .signup-form{
+    width: calc(100% / 2 - 25px);
+  }
+  .forms .form-content .title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+  }
+  .forms .form-content .title:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background: #EDB429;
+  }
+  .forms .signup-form  .title:before{
+    width: 20px;
+  }
+  .forms .form-content .input-boxes{
+    margin-top: 30px;
+  }
+  .forms .form-content .input-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+    margin-top: 25px;
+    
+  }
+  .form-content .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+  .form-content .input-box input:focus,
+  .form-content .input-box input:valid{
+    border-color: #EDB429;
+  }
+  .form-content .input-box i{
+    position: absolute;
+    color: #EDB429;
+    font-size: 17px;
+  }
+  .form-content .text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  .form-content .text a{
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  .form-content .text a:hover{
+    text-decoration: underline;
+  }
+  .form-content .button{
+    color: #fff;
+    margin-top: 40px;
+  }
+  .form-content .button input{
+    color: #fff;
+    background: #EDB429;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  .form-content .button input:hover{
+    background: #EDB429;
+  }
+  .form-content label{
+    color: #EDB429;
+    cursor: pointer;
+  }
+  .form-content label:hover{
+    text-decoration: underline;
+  }
+  
+
+
+  @media (max-width: 730px) {
+
+    }
+    .form-content .login-form,
+    .form-content .signup-form{
+      width: 100%;
+    }
+    .form-content .signup-form{
+      display: none;
+
+    }
+    .fp{
+    color:#EDB429
+    }
+    form .text h3 {
+    
+    text-decoration: none;
+    font-weight: lighter;
+    margin-top: 25px;
+  }
+  form .text h4 a{
+    color: #EDB429;
+    text-decoration: none;
+  }
+  .arrow{
+    margin-top: -40px;
+  }
+  .s-btn{
+    background:#EDB429 ;
+    color:#ffff;
+    border-radius: 8px;
+    padding: 18px 35px;
+    border: none;
+    height: 56px;
+    width: 131px;
+    margin-left: 120px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+   </style>
+  <body>
+    <div class="container">
+      <div class="cover">
+        <div class="front">
+          <img src="images/frontImg.jpg" alt="">
+        </div>
+      <div class="back">
+        <img class="backImg" src="images/backImg.jpg" alt="">  
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="arrow">
+               <a href="index.html">
+                <svg width="30" height="30" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M61.4531 34.5C61.4531 35.3578 61.1123 36.1805 60.5058 36.787C59.8992 37.3936 59.0765 37.7344 58.2187 37.7344H18.5976L32.4839 51.6179C33.0915 52.2255 33.4329 53.0496 33.4329 53.9089C33.4329 54.7682 33.0915 55.5923 32.4839 56.1999C31.8763 56.8076 31.0522 57.1489 30.1929 57.1489C29.3336 57.1489 28.5095 56.8076 27.9019 56.1999L8.49561 36.7937C8.19408 36.4932 7.95483 36.1362 7.79159 35.743C7.62834 35.3499 7.54431 34.9284 7.54431 34.5027C7.54431 34.077 7.62834 33.6555 7.79159 33.2623C7.95483 32.8692 8.19408 32.5121 8.49561 32.2117L27.9019 12.8054C28.2027 12.5046 28.5599 12.2659 28.953 12.1031C29.3461 11.9402 29.7674 11.8564 30.1929 11.8564C30.6184 11.8564 31.0397 11.9402 31.4328 12.1031C31.8259 12.2659 32.183 12.5046 32.4839 12.8054C32.7848 13.1063 33.0234 13.4634 33.1862 13.8565C33.3491 14.2496 33.4329 14.6709 33.4329 15.0964C33.4329 15.5219 33.3491 15.9432 33.1862 16.3363C33.0234 16.7294 32.7848 17.0866 32.4839 17.3874L18.5976 31.2656H58.2187C59.0765 31.2656 59.8992 31.6064 60.5058 32.2129C61.1123 32.8195 61.4531 33.6422 61.4531 34.5Z" fill="black"/>
+                </svg>
+               </a>
+            </div>   
+            <div class="title">Login</div>
+            <form action="#">
+              <div class="input-boxes">
+                <div class="input-box">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" placeholder="Enter your password" required>
+                </div>
+                <div class="text" ><h4><a href="#">Forgot password?</a></h4></div>
+                <div class="button input-box" input type="submit">
+                  <a href="index.html" class="btn btn-secondary s-btn">Log in</a>
+                </div>
+                <div class="text">
+                <h3>Do you have an account? <a href="sign.html">Sign Up</a></h3>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

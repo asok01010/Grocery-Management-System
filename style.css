@@ -1,0 +1,243 @@
+body{
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.navbar{
+    
+  justify-content: space-between;
+  padding: 20px 30px 30px 50px;
+  align-items: center;    
+}
+
+.navbar img{
+  height: 94px;
+  width: 94px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.menu-items{
+  display: flex;
+  list-style: none;
+  margin-left: 25px;
+}
+
+.p-btn{
+  background:#EDB429 ;
+  color:#ffff;
+  border-radius: 8px;
+  padding: 16px 36px;
+  border: none;
+  height: 56px;
+  width: 131px;
+}
+
+.s-btn{
+  background-color: #ffff;
+  color: #EDB429;
+  border-radius: 8px;
+  padding: 16px 32px;
+  border: 3px solid #EDB429 ;
+  height: 56px;
+  width: 131px;
+  margin-right: 58px;
+}
+
+.menu-items a{
+  padding: 50px;
+  text-decoration: none;
+  color: black;
+    
+}
+
+.p-btn:hover{
+  background-color: #ffff;
+  color: #EDB429;
+  border-radius: 8px;
+  padding: 16px 32px;
+  border: 3px solid #EDB429 ;
+  height: 56px;
+  width: 131px;    
+}
+.s-btn:hover{
+  background:#EDB429 ;
+  color:#ffff;
+  border-radius: 8px;
+  padding: 16px 36px;
+  border: none;
+  height: 56px;
+  width: 131px;
+}
+
+.navbar{
+   
+    background-color: #D9D9D9;
+}
+.hero {
+  background-color:#EDB429; /* Yellow color */
+  color: #fff;
+  text-align: center;
+  padding:150px 0 ;
+}
+
+.hero h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.hero-image {
+  height: 150px;
+  width: 150px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+   
+}
+
+.image-container {
+  display: flex; /* Display the images side by side */
+  justify-content: center; /* Center the images horizontally */
+  margin-top: 20px;
+    
+} 
+  
+.img-name{
+  font-size: 24px !important;
+  font-weight: bold;
+}
+ 
+  .container-full{
+    width: 90%;
+}
+
+.detail{
+  margin-top: 175px !important;
+  align-items: center;
+}
+  
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container-a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 620px;
+  background-color: #f0f0f0; /* Add your desired background color */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.left-side {
+ width: 305px;
+  color: black;
+}
+
+.right-side {
+  flex: 1;
+  padding-left: 20px;
+  border-left: 1px solid #ccc; /* Add a border between left and right sides */
+  color: black;
+}
+
+/* Style the "Address," "Phone," and "Email" sections */
+.details {
+  margin-bottom: 60px;
+}
+
+.topic-text{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.input-box {
+  margin-bottom: 10px;
+ 
+}
+
+.topic{
+  font-weight: bold;
+}
+
+
+.button {
+  margin-top: 50px;
+  
+}
+
+.button input[type="button"] {
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  color: #ffff;
+  background-color: #EDB429;
+  border-radius: 8px;
+  padding: 7px 25px;
+  border: 3px solid #EDB429 ;
+  height: 56px;
+  width: 131px;
+  text-decoration: none !important;
+  margin-left: 32px;   
+  font-size: large; 
+}
+
+
+.input-box-a input{
+  border-radius: 15px;
+
+}
+.input-box-a input {
+  height: 50px;
+  padding: 50px; /* Adjust this value to control the spacing inside the input box */
+  box-sizing: border-box;
+}
+.placeholder-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px; /* Adjust this value to control the spacing of the placeholder text */
+  pointer-events: none;
+  color: #999; 
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
